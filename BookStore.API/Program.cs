@@ -16,7 +16,7 @@ namespace BookStore.API
             IConfiguration configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json") // Specify the path to your appsettings.json file
                 .Build();
-            string connectionString = configuration.GetConnectionString("BookStoreDb");
+            var connectionString = configuration.GetConnectionString("BookStoreDb");
 
             // Add services to the container.
 
